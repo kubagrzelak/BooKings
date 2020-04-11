@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="pane" prefHeight="41.0" prefWidth="135.0" stylesheets="@../stylesheets/statisticSnippet.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StatisticsSnippet">
+   <top>
+      <GridPane fx:id="gridPane" alignment="TOP_RIGHT" minHeight="50.0" styleClass="gridPane">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox fx:id="box" alignment="CENTER">
+               <children>
+                  <Label fx:id="nameLabel" alignment="TOP_RIGHT" contentDisplay="RIGHT" styleClass="typeLabel" text="Label" textAlignment="CENTER" />
+                  <ComboBox fx:id="combo" minWidth="80.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </top>
+   <center>
+      <Label fx:id="valueLabel" styleClass="dataLabel" text="Label" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></Label>
+   </center>
+   <bottom>
+      <Button fx:id="show" mnemonicParsing="false" onAction="#clickShow" text="Show Details" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin></Button>
+   </bottom>
+</BorderPane>

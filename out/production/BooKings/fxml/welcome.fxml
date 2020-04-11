@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="welcomePane" minHeight="500" minWidth="700" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WelcomeController">
+   <ImageView fx:id="welcomeImage" fitHeight="500.0" fitWidth="700.0" preserveRatio="true" BorderPane.alignment="CENTER" StackPane.alignment="TOP_CENTER">
+      <image>
+         <Image url="@../images/welcome.png" />
+      </image>
+   </ImageView>
+   <Label fx:id="prompt" text="Enter a valid price range to get started" StackPane.alignment="BOTTOM_CENTER">
+      <StackPane.margin>
+         <Insets bottom="100.0" />
+      </StackPane.margin>
+   </Label>
+   <stylesheets>
+      <URL value="@../stylesheets/welcome.css" />
+      <URL value="@../stylesheets/fonts.css" />
+   </stylesheets>
+</StackPane>

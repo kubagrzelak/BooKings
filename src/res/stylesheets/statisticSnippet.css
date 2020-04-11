@@ -1,0 +1,31 @@
+.dataLabel {
+    -fx-font-size: 15px;
+    -fx-text-fill: #092D50;
+    -fx-font-family: "KingsBureauGrot-FiveOne";
+    -fx-padding: 0px 0px 50px 0px;
+}
+
+.dataLabelWithCombo {
+    -fx-font-size: 15px;
+    -fx-text-fill: #092D50;
+    -fx-font-family: "KingsBureauGrot-FiveOne";
+    -fx-padding: 0px 0px 10px 0px;
+}
+
+.typeLabel {
+    -fx-font-size: 15px;
+    -fx-text-fill: #092D50;
+    -fx-font-family: "KingsBureauGrot-ThreeSeven";
+}
+
+.button {
+    -fx-font-size: 15px;
+    -fx-text-fill: #092D50;
+    -fx-font-family: "KingsBureauGrot-ThreeSeven";
+    -fx-background-color: transparent;
+}
+
+.button:hover {
+    -fx-background-color: #AD1E17;
+    -fx-text-fill: white;
+}

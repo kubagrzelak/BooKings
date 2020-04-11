@@ -1,0 +1,29 @@
+.border-pane {
+    -fx-background-color: white;
+    -fx-background-size: stretch;
+    -fx-text-fill: white;
+}
+
+.border {
+    -fx-background-color: rgb(222, 196, 195, 0.3);
+    -fx-border-width: 6px, 6px, 6px, 6px;
+    -fx-border-color: #AD1E17;
+}
+
+.arrow:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(50,0,0,0.8), 2, 0, 0, 0);
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-border-style: null;
+    -fx-background-size: contain;
+}
+
+.blankLabel {
+        -fx-font-size: 20px;
+        -fx-text-fill: #092D50;
+        -fx-font-family: "KingsBureauGrot-ThreeSeven";
+        -fx-background-color: transparent;
+        -fx-padding: 0px 0px 25px 0px;
+}

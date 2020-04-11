@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="350.0" styleClass="snippet" type="BorderPane" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <fx:define>
+      <ContextMenu fx:id="contextMenu">
+         <items>
+            <MenuItem fx:id="open" text="Open" />
+
+            <MenuItem fx:id="favourite" text="Add to Favourites" />
+            <MenuItem fx:id="compare" text="Compare" />
+
+         </items>
+      </ContextMenu>
+   </fx:define>
+   <center>
+      <HBox spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="propertyImage" fitHeight="115.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/house.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin></ImageView>
+            <VBox spacing="5.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label id="idLabel" fx:id="idLabel" text="IDNUM" />
+                        <ImageView id="starOutline" fx:id="star" fitHeight="13.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../images/star-outline.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label id="boldtext" fx:id="typeLabel" styleClass="bold" text="Type" />
+                  <HBox>
+                     <children>
+                        <Label id="boldtext" text="MInimum number of nights: " />
+                        <Label fx:id="nightsLabel" text="Nights" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label id="boldtext" text="Host: " />
+                        <Label fx:id="hostLabel" text="Host" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <top>
+      <HBox alignment="TOP_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="reviewLabel" text="Review" />
+            <Label text=" Reviews" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="BOTTOM_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="boldtext" layoutX="259.0" layoutY="10.0" text="£" />
+            <Label id="boldtext" fx:id="priceLabel" text="Price" />
+            <Label text=" (per Night)" />
+         </children>
+      </HBox>
+   </bottom>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../stylesheets/fonts.css" />
+      <URL value="@../stylesheets/list.css" />
+      <URL value="@../stylesheets/main.css" />
+   </stylesheets>
+</fx:root>

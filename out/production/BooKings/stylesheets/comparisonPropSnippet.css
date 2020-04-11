@@ -1,0 +1,51 @@
+#vbox {
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+}
+
+.label{
+    -fx-font-size: 15px;
+    -fx-text-fill: #092D50;
+    -fx-font-family: "KingsBureauGrot-FiveOne";
+    -fx-wrap-text: true;
+    -fx-label-padding: 8px 0px 8px 0px;
+}
+
+#bestMatch {
+    -fx-font-size: 27px;
+    -fx-text-fill: gold;
+    -fx-font-family: "KingsBureauGrot-FiveOneItalic";
+    -fx-label-padding: 0px 0px 16px 0px;
+}
+
+#priceLabel{
+    -fx-label-padding: 8px 0px 21px 0px;
+}
+
+#nameLabel{
+    -fx-label-padding: 16px 0px 8px 0px;
+}
+
+.button {
+    -fx-alignment: center;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-family: "KingsBureauGrot-FiveOne";
+    -fx-background-color: #092D50;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-color: #092D50;
+    -fx-border-radius: 3px;
+    -fx-padding: 10px;
+    -fx-background-radius: 3px;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, gray, 15, 0, 0, 0);
+}
+
+.button:pressed{
+    -fx-background-color: rgba(9, 45, 80, 0.67);
+}
+

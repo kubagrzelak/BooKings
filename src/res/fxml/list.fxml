@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListController">
+   <BorderPane styleClass="banner">
+      <left>
+         <VBox BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+               <Insets />
+            </BorderPane.margin>
+            <children>
+               <HBox styleClass="title">
+                  <children>
+                     <Label fx:id="boroughLabel" styleClass="title" text="label" />
+                  </children>
+               </HBox>
+               <HBox styleClass="subtitle">
+                  <children>
+                     <Label fx:id="numberOfProperties" text="####">
+                        <font>
+                           <Font size="10.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+            </children>
+            <padding>
+               <Insets bottom="10.0" />
+            </padding>
+         </VBox>
+      </left>
+      <bottom>
+         <VBox BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+               <Insets top="5.0" />
+            </BorderPane.margin>
+            <TitledPane expanded="false" text="Options">
+               <HBox alignment="TOP_RIGHT" spacing="5.0">
+                  <ComboBox fx:id="listingPerPageBox" onAction="#listingPerPageSelection" promptText="PER PAGE" />
+                  <ComboBox fx:id="sortByBox" nodeOrientation="LEFT_TO_RIGHT" onAction="#sortBySelection" promptText="SORT BY" visibleRowCount="5" />
+                  <ComboBox fx:id="directionBox" disable="true" onAction="#directionSelection" promptText="DIRECTION" />
+               </HBox>
+            </TitledPane>
+         </VBox>
+      </bottom>
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+   </BorderPane>
+   <Pagination fx:id="pagination" styleClass="address" />
+   <stylesheets>
+      <URL value="@../stylesheets/list.css" />
+      <URL value="@../stylesheets/main.css" />
+      <URL value="@../stylesheets/fonts.css" />
+   </stylesheets>
+</VBox>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="comparisonPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ComparisonController">
+   <center>
+      <StackPane fx:id="stackPane" style="-fx-background-color: white" alignment="CENTER">
+         <Label fx:id="emptyList" text="You don't have any properties to compare." visible="true" />
+         <BorderPane fx:id="compareView" visible="false">
+            <left>
+               <VBox fx:id="leftVBox" BorderPane.alignment="CENTER_RIGHT" maxHeight="600">
+                  <VBox fx:id="checkVBox">
+                     <Label id="boldLabel" text="Best Match Preferences:" wrapText="true" />
+                     <CheckBox fx:id="nightsCheckBox" mnemonicParsing="false" onAction="#handleCheckBox" text="Min. nights" />
+                     <CheckBox fx:id="distanceCheckBox" mnemonicParsing="false" onAction="#handleCheckBox" text="Distance from Central London" />
+                     <CheckBox fx:id="priceCheckBox" mnemonicParsing="false" onAction="#handleCheckBox" selected="true" text="Price" />
+                  </VBox>
+                  <Label id="boldNameLabel" text="Name:" />
+                  <Label id="boldLabel" text="Neighbourhood:" />
+                  <Label id="boldLabel" text="Room:" />
+                  <Label id="boldLabel" text="Host:" />
+                  <Label id="boldLabel" text="Min. nights:" />
+                  <Label id="boldLabel" text="Distance from Central London:" wrapText="true" />
+                  <Label id="boldLabel" text="Price (per night):" />
+               </VBox>
+            </left>
+            <center>
+               <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" vbarPolicy="NEVER" BorderPane.alignment="CENTER_LEFT" maxHeight="600"/>
+            </center>
+            <bottom>
+               <Pane fx:id="bottomPane" />
+            </bottom>
+         </BorderPane>
+      </StackPane>
+   </center>
+   <stylesheets>
+      <URL value="@../stylesheets/fonts.css" />
+      <URL value="@../stylesheets/comparison.css" />
+   </stylesheets>
+   <top>
+      <ImageView fitHeight="150.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/compare.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets left="400.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </top>
+</BorderPane>

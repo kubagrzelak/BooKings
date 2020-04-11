@@ -1,0 +1,95 @@
+.banner {
+    -fx-background-color: #e22319ef;
+}
+
+.banner .label {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-font-family: "KingsBureauGrot-FiveOne";
+
+}
+
+.title .label {
+    -fx-font-size: 24px;
+    -fx-effect: dropshadow(three-pass-box, rgba(50,0,0,0.8), 10, 0, 0, 0);
+}
+
+.subtitle . label {
+    -fx-font-size: 13px;
+}
+
+#title1 {
+    -fx-font-size: 54px;
+}
+
+#title2 {
+    -fx-font-size: 54px;
+    -fx-font-family: "KingsBureauGrot-ThreeSeven";
+}
+
+.text-field, .combo-box {
+    -fx-background-color: #AD1E17;
+    -fx-font: 20px "KingsBureauGrot-FiveOne";
+    -fx-text-fill: white;
+    -fx-effect: innershadow(one-pass-box, rgba(50,0,0,0.8), 10, 0, 0, 0);
+    -fx-highlight-fill: #ff878e;
+}
+
+.combo-box .list-cell {
+    -fx-font: 13px "KingsBureauGrot-FiveOne";
+    -fx-text-fill: white;
+}
+.combo-box-popup .list-cell {
+    -fx-font: 13px "KingsBureauGrot-FiveOne";
+    -fx-text-fill: black;
+}
+
+.combo-box .combo-box-popup .list-cell:hover,
+.combo-box .combo-box-popup .list-cell:selected {
+    -fx-text-fill: white ;
+    -fx-background-color: #092D50 ;
+}
+
+.combo-box .combo-box-popup .list-cell:selected {
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-insets: 1px;
+    -fx-border-radius: 4px;
+}
+
+.combo-box .arrow-button .arrow
+{
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(50,0,0,0.8), 10, 0, 0, 0);
+}
+
+#leftButton {
+    -fx-background-image: url("../images/arrow-left.png");
+}
+
+#rightButton {
+    -fx-background-image: url("../images/arrow-right.png");
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-border-style: null;
+    -fx-background-size: contain;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(20,0,0,0.8), 5, 0, 0, 0);
+}
+
+.menu .button {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-family: "KingsBureauGrot-FiveOne";
+}
+
+.menu .button:hover {
+    -fx-background-color: #092D50;
+}
+
+.menu {
+    -fx-background-radius: 10 10 0 0;
+}

@@ -1,0 +1,19 @@
+.path {
+    -fx-stroke: #092D50;
+    -fx-stroke-width: .5px;
+}
+
+.path:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(50,0,0,0.8), 5, 0, 0, 0);
+}
+
+.border-pane {
+    -fx-background-color: white;
+    -fx-background-image: url("../images/map.png");
+    -fx-background-size: stretch;
+}
+
+.label {
+    -fx-font: 18px "KingsBureauGrot-FiveOne";
+    -fx-text-fill: #092D50;
+}

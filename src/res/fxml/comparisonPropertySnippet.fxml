@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<fx:root styleClass="compSnippet" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="BorderPane" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <VBox fx:id="vbox" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="bestMatch" text="BEST MATCH!" visible="false"/>
+                <ImageView fx:id="propertyImage" fitHeight="175.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/house.png"/>
+                </ImageView>
+                <Label fx:id="nameLabel" text="Name" wrapText="true" />
+                <Label fx:id="neighbourhoodLabel" text="Neighbourhood" />
+                <Label fx:id="typeLabel" text="Type" />
+                <Label fx:id="hostLabel" text="Host" />
+                <Label fx:id="nightsLabel" text="Nights" />
+                <Label fx:id="distanceLabel" text="Distance from Central London:"/>
+                <Label fx:id="priceLabel" text="Price" />
+                <Button fx:id="removeButton" mnemonicParsing="false" text="Remove" onAction="#removeButton"/>
+            </children>
+        </VBox>
+    </center>
+    <stylesheets>
+        <URL value="@../stylesheets/fonts.css" />
+        <URL value="@../stylesheets/comparisonPropSnippet.css"/>
+    </stylesheets>
+</fx:root>
+
+

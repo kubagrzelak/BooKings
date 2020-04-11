@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane prefHeight="430.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PropertyController">
+  <tabs>
+    <Tab fx:id="propertyTab" text="Property">
+         <BorderPane style="-fx-background-color: white;">
+            <center>
+            <HBox fx:id="tabHBox" spacing="10.0">
+              <children>
+                <VBox fx:id="leftVBox" alignment="BOTTOM_CENTER">
+                  <children>
+                    <ImageView fx:id="propertyImage" fitHeight="225" fitWidth="225" pickOnBounds="true" preserveRatio="true">
+                      <Image url="@../images/house.png" />
+                    </ImageView>
+                    <Label fx:id="nameLabel" alignment="TOP_CENTER" prefHeight="120.0" prefWidth="250.0" text="Name" />
+                  </children>
+                </VBox>
+                <VBox fx:id="rightVBox" alignment="CENTER_LEFT">
+                  <children>
+                    <HBox>
+                      <children>
+                        <Label id="boldText" fx:id="typeTitle" text="Room type:" />
+                        <Label fx:id="typeLabel" text="Type" />
+                      </children>
+                    </HBox>
+                    <HBox>
+                      <children>
+                        <Label id="boldText" fx:id="neighbourhoodTitle" text="Neighbourhood:" />
+                        <Label fx:id="neighbourhoodLabel" text="Neighbourhood" />
+                      </children>
+                    </HBox>
+                    <HBox>
+                      <children>
+                        <Label id="boldText" fx:id="hostTitle" text="Hosted by:" />
+                        <Label fx:id="hostLabel" text="Host" />
+                      </children>
+                    </HBox>
+                    <HBox>
+                      <children>
+                        <Label id="boldText" fx:id="priceTitle" text="Price per night:" />
+                        <Label fx:id="priceLabel" text="Price" />
+                      </children>
+                    </HBox>
+                    <HBox>
+                      <children>
+                        <Label id="boldText" fx:id="nightsTitle" text="Minimum stay:" />
+                        <Label fx:id="nightsLabel" text="Minimum nights" />
+                      </children>
+                    </HBox>
+                    <Label id="boldText" fx:id="reviewsLabel" text="reviews (last: date)" />
+                    <Label id="boldText" fx:id="availabilityLabel" text="Available X days in a year" />
+                    <Button fx:id="compareButton" mnemonicParsing="false" onAction="#addButton" text="Add to Comparison List">
+                              <VBox.margin>
+                                 <Insets left="20.0" top="20.0" />
+                              </VBox.margin>
+                           </Button>
+                  </children>
+                </VBox>
+              </children>
+                  <BorderPane.margin>
+                     <Insets />
+                  </BorderPane.margin>
+            </HBox>
+            </center>
+            <left>
+               <ImageView fx:id="previousButton" fitWidth="35.0" onMouseClicked="#previous" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                  <image>
+                     <Image url="@../images/statistics-left.PNG" />
+                  </image>
+                  <BorderPane.margin>
+                     <Insets left="10.0" />
+                  </BorderPane.margin>
+                  <styleClass>
+                     <String fx:value="button" />
+                     <String fx:value="left-button" />
+                  </styleClass>
+               </ImageView>
+            </left>
+            <right>
+               <ImageView fx:id="nextButton" fitWidth="35.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                  <image>
+                     <Image url="@../images/statistics-right.PNG" />
+                  </image>
+                  <BorderPane.margin>
+                     <Insets right="10.0" />
+                  </BorderPane.margin>
+                  <styleClass>
+                     <String fx:value="button" />
+                     <String fx:value="right-button" />
+                  </styleClass>
+               </ImageView>
+            </right>
+         </BorderPane>
+    </Tab>
+    <Tab fx:id="mapTab" text="Map">
+         <content>
+           <BorderPane fx:id="mapPane" />
+         </content>
+    </Tab>
+  </tabs>
+  <stylesheets>
+    <URL value="@../stylesheets/fonts.css" />
+    <URL value="@../stylesheets/property.css" />
+  </stylesheets>
+</TabPane>
