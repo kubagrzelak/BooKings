@@ -1,5 +1,16 @@
 # BooKings
 
+Authors: Jakub Grzelak, Andras Horvath, Matteo Fortier, Jan Marczak
+
+In this project we used a database of AirBnB properties in London.
+
+The London Property Marketplace, that our team has named BooKing’s, is
+an application for exploring properties from loaded datasets. Its core
+functionality can be divided into three main categories: map, statistics, view
+and compare properties. Moreover, the program provides some extra
+additions that make the user experience flawless and enjoyable.
+
+
 To run the project with Java 9+, set these VM options:
 `--module-path "PATH_TO_PROJECT/BooKings/lib"`
 
